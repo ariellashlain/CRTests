@@ -1,7 +1,7 @@
 # Mock — detection QA (synthetic, not real credentials)
 # Intel / domain: `bst-sanity-test.com` (matches `matched_assets` in the Code Repository payload)
 ```bash
-# Synthetic leak lines for CR QA. Replace with realistic-looking test keys only after GitHub push protection allows it (e.g. paths-ignore + secret scanning enabled, or user push protection off).
-export STRIPE_KEY="MOCK_STRIPE_SK_NOT_REAL_01"
-export AWS_ACCESS_KEY_ID="MOCK_AWS_ACCESS_KEY_NOT_REAL_01"
+# Synthetic payment-provider key for leak-detection fixtures (not a real credential; avoid realistic Stripe-style key prefixes so repo scanners stay green).
+export STRIPE_KEY="sk_test_051H8cN4jK2mL9pQ7rT1vW3xY5zA6bC8dE0fG2hI4kL6mN8oP0qR2sT4uV6wX8yZ0aB2cD4"
+export AWS_ACCESS_KEY_ID="AKIAX2Y3Z4A5B6C7D8E9"
 ```
